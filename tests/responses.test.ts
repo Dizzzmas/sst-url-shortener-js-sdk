@@ -1,5 +1,5 @@
-import { createResponseHeaders } from 'sst-url-shortener/core';
-import { Headers } from 'sst-url-shortener/_shims/index';
+import { createResponseHeaders } from '@dizzzmas/sst-url-shortener-sdk/core';
+import { Headers } from '@dizzzmas/sst-url-shortener-sdk/_shims/index';
 
 describe('response parsing', () => {
   // TODO: test unicode characters

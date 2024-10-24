@@ -1,6 +1,6 @@
 import fs from 'fs';
-import { toFile, type ResponseLike } from 'sst-url-shortener/uploads';
-import { File } from 'sst-url-shortener/_shims/index';
+import { toFile, type ResponseLike } from '@dizzzmas/sst-url-shortener-sdk/uploads';
+import { File } from '@dizzzmas/sst-url-shortener-sdk/_shims/index';
 
 class MyClass {
   name: string = 'foo';

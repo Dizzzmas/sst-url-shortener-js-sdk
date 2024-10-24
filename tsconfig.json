@@ -9,9 +9,9 @@
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
-      "sst-url-shortener/_shims/auto/*": ["src/_shims/auto/*-node"],
-      "sst-url-shortener/*": ["src/*"],
-      "sst-url-shortener": ["src/index.ts"],
+      "@dizzzmas/sst-url-shortener-sdk/_shims/auto/*": ["src/_shims/auto/*-node"],
+      "@dizzzmas/sst-url-shortener-sdk/*": ["src/*"],
+      "@dizzzmas/sst-url-shortener-sdk": ["src/index.ts"],
     },
     "noEmit": true,
 

@@ -55,12 +55,12 @@ $ cd sst-url-shortener-node
 # With yarn
 $ yarn link
 $ cd ../my-package
-$ yarn link sst-url-shortener
+$ yarn link @dizzzmas/sst-url-shortener-sdk
 
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global sst-url-shortener
+$ pnpm link -—global @dizzzmas/sst-url-shortener-sdk
 ```
 
 ## Running tests

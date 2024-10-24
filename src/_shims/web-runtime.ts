@@ -9,9 +9,9 @@ export function getRuntime({ manuallyImported }: { manuallyImported?: boolean } 
   const recommendation =
     manuallyImported ?
       `You may need to use polyfills`
-    : `Add one of these imports before your first \`import … from 'sst-url-shortener'\`:
-- \`import 'sst-url-shortener/shims/node'\` (if you're running on Node)
-- \`import 'sst-url-shortener/shims/web'\` (otherwise)
+    : `Add one of these imports before your first \`import … from '@dizzzmas/sst-url-shortener-sdk'\`:
+- \`import '@dizzzmas/sst-url-shortener-sdk/shims/node'\` (if you're running on Node)
+- \`import '@dizzzmas/sst-url-shortener-sdk/shims/web'\` (otherwise)
 `;
 
   let _fetch, _Request, _Response, _Headers;

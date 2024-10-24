@@ -1,6 +1,6 @@
-import { multipartFormRequestOptions, createForm } from 'sst-url-shortener/core';
-import { Blob } from 'sst-url-shortener/_shims/index';
-import { toFile } from 'sst-url-shortener';
+import { multipartFormRequestOptions, createForm } from '@dizzzmas/sst-url-shortener-sdk/core';
+import { Blob } from '@dizzzmas/sst-url-shortener-sdk/_shims/index';
+import { toFile } from '@dizzzmas/sst-url-shortener-sdk';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {
