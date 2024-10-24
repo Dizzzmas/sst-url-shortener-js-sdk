@@ -1,6 +1,6 @@
 # Sst URL Shortener Node API Library
 
-[![NPM version](https://img.shields.io/npm/v/sst-url-shortener.svg)](https://npmjs.org/package/sst-url-shortener) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/sst-url-shortener)
+[![NPM version](https://img.shields.io/npm/v/@dizzzmas/sst-url-shortener-sdk.svg)](https://npmjs.org/package/@dizzzmas/sst-url-shortener-sdk) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@dizzzmas/sst-url-shortener-sdk)
 
 This library provides convenient access to the Sst URL Shortener REST API from server-side TypeScript or JavaScript.
 
@@ -15,7 +15,7 @@ npm install git+ssh://git@github.com:stainless-sdks/sst-url-shortener-node.git
 ```
 
 > [!NOTE]
-> Once this package is [published to npm](https://app.stainlessapi.com/docs/guides/publish), this will become: `npm install sst-url-shortener`
+> Once this package is [published to npm](https://app.stainlessapi.com/docs/guides/publish), this will become: `npm install @dizzzmas/sst-url-shortener-sdk`
 
 ## Usage
 
@@ -23,7 +23,7 @@ The full API of this library can be found in [api.md](api.md).
 
 <!-- prettier-ignore -->
 ```js
-import SstURLShortener from 'sst-url-shortener';
+import SstURLShortener from '@dizzzmas/sst-url-shortener-sdk';
 
 const client = new SstURLShortener();
 
@@ -42,7 +42,7 @@ This library includes TypeScript definitions for all request params and response
 
 <!-- prettier-ignore -->
 ```ts
-import SstURLShortener from 'sst-url-shortener';
+import SstURLShortener from '@dizzzmas/sst-url-shortener-sdk';
 
 const client = new SstURLShortener();
 
@@ -210,11 +210,11 @@ add the following import before your first import `from "SstURLShortener"`:
 ```ts
 // Tell TypeScript and the package to use the global web fetch instead of node-fetch.
 // Note, despite the name, this does not add any polyfills, but expects them to be provided if needed.
-import 'sst-url-shortener/shims/web';
-import SstURLShortener from 'sst-url-shortener';
+import '@dizzzmas/sst-url-shortener-sdk/shims/web';
+import SstURLShortener from '@dizzzmas/sst-url-shortener-sdk';
 ```
 
-To do the inverse, add `import "sst-url-shortener/shims/node"` (which does import polyfills).
+To do the inverse, add `import "@dizzzmas/sst-url-shortener-sdk/shims/node"` (which does import polyfills).
 This can also be useful if you are getting the wrong TypeScript types for `Response` ([more details](https://github.com/stainless-sdks/sst-url-shortener-node/tree/main/src/_shims#readme)).
 
 ### Logging and middleware
@@ -224,7 +224,7 @@ which can be used to inspect or alter the `Request` or `Response` before/after e
 
 ```ts
 import { fetch } from 'undici'; // as one example
-import SstURLShortener from 'sst-url-shortener';
+import SstURLShortener from '@dizzzmas/sst-url-shortener-sdk';
 
 const client = new SstURLShortener({
   fetch: async (url: RequestInfo, init?: RequestInit): Promise<Response> => {

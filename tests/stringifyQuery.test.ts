@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { SstURLShortener } from 'sst-url-shortener';
+import { SstURLShortener } from '@dizzzmas/sst-url-shortener-sdk';
 
 const { stringifyQuery } = SstURLShortener.prototype as any;
 

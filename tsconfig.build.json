@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "sst-url-shortener/*": ["dist/src/*"],
-      "sst-url-shortener": ["dist/src/index.ts"],
+      "@dizzzmas/sst-url-shortener-sdk/*": ["dist/src/*"],
+      "@dizzzmas/sst-url-shortener-sdk": ["dist/src/index.ts"],
     },
     "noEmit": false,
     "declaration": true,

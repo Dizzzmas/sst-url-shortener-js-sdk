@@ -42,12 +42,12 @@ export let isFsReadStream: Shims['isFsReadStream'] | undefined = undefined;
 export function setShims(shims: Shims, options: { auto: boolean } = { auto: false }) {
   if (auto) {
     throw new Error(
-      `you must \`import 'sst-url-shortener/shims/${shims.kind}'\` before importing anything else from sst-url-shortener`,
+      `you must \`import '@dizzzmas/sst-url-shortener-sdk/shims/${shims.kind}'\` before importing anything else from @dizzzmas/sst-url-shortener-sdk`,
     );
   }
   if (kind) {
     throw new Error(
-      `can't \`import 'sst-url-shortener/shims/${shims.kind}'\` after \`import 'sst-url-shortener/shims/${kind}'\``,
+      `can't \`import '@dizzzmas/sst-url-shortener-sdk/shims/${shims.kind}'\` after \`import '@dizzzmas/sst-url-shortener-sdk/shims/${kind}'\``,
     );
   }
   auto = options.auto;

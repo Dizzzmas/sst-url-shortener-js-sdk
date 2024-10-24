@@ -6,9 +6,9 @@
     "rootDir": "./deno",
     "lib": ["es2020", "DOM"],
     "paths": {
-      "sst-url-shortener/_shims/auto/*": ["deno/_shims/auto/*-deno"],
-      "sst-url-shortener/*": ["deno/*"],
-      "sst-url-shortener": ["deno/index.ts"],
+      "@dizzzmas/sst-url-shortener-sdk/_shims/auto/*": ["deno/_shims/auto/*-deno"],
+      "@dizzzmas/sst-url-shortener-sdk/*": ["deno/*"],
+      "@dizzzmas/sst-url-shortener-sdk": ["deno/index.ts"],
     },
     "noEmit": true,
     "declaration": true,

@@ -4,8 +4,8 @@
 /**
  * Types will get added to this namespace when you import one of the following:
  *
- *   import 'sst-url-shortener/shims/node'
- *   import 'sst-url-shortener/shims/web'
+ *   import '@dizzzmas/sst-url-shortener-sdk/shims/node'
+ *   import '@dizzzmas/sst-url-shortener-sdk/shims/web'
  *
  * Importing more than one will cause type and runtime errors.
  */

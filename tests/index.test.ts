@@ -1,8 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import SstURLShortener from 'sst-url-shortener';
-import { APIUserAbortError } from 'sst-url-shortener';
-import { Headers } from 'sst-url-shortener/core';
+import SstURLShortener from '@dizzzmas/sst-url-shortener-sdk';
+import { APIUserAbortError } from '@dizzzmas/sst-url-shortener-sdk';
+import { Headers } from '@dizzzmas/sst-url-shortener-sdk/core';
 import defaultFetch, { Response, type RequestInit, type RequestInfo } from 'node-fetch';
 
 describe('instantiate client', () => {

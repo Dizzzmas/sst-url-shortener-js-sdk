@@ -7,9 +7,9 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^sst-url-shortener$': '<rootDir>/src/index.ts',
-    '^sst-url-shortener/_shims/auto/(.*)$': '<rootDir>/src/_shims/auto/$1-node',
-    '^sst-url-shortener/(.*)$': '<rootDir>/src/$1',
+    '^@dizzzmas/sst-url-shortener-sdk$': '<rootDir>/src/index.ts',
+    '^@dizzzmas/sst-url-shortener-sdk/_shims/auto/(.*)$': '<rootDir>/src/_shims/auto/$1-node',
+    '^@dizzzmas/sst-url-shortener-sdk/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',
