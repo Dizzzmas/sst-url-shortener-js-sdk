@@ -1,10 +1,12 @@
-# Sst URL Shortener Node API Library
+# sst-url-shortener-js-sdk
 
 [![NPM version](https://img.shields.io/npm/v/@dizzzmas/sst-url-shortener-sdk.svg)](https://npmjs.org/package/@dizzzmas/sst-url-shortener-sdk) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@dizzzmas/sst-url-shortener-sdk)
 
-This library provides convenient access to the Sst URL Shortener REST API from server-side TypeScript or JavaScript.
+Project this SDK is for: [sst-url-shortener](https://github.com/Dizzzmas/sst-url-shortener)
 
-The REST API documentation can be found on [docs.sst-url-shortener.com](https://docs.sst-url-shortener.com). The full API of this library can be found in [api.md](api.md).
+This library provides convenient access to the SST URL Shortener REST API from server-side TypeScript or JavaScript.
+
+The full API of this library can be found in [api.md](api.md).
 
 It is generated with [Stainless](https://www.stainlessapi.com/).
 
@@ -22,7 +24,10 @@ The full API of this library can be found in [api.md](api.md).
 ```js
 import SstURLShortener from '@dizzzmas/sst-url-shortener-sdk';
 
-const client = new SstURLShortener();
+const client = new SstURLShortener({
+  baseURL: "YOUR_URL_SHORTENER_API_URL",
+  bearerToken: "your_secret"
+});
 
 async function main() {
   const url = await client.urls.create({ originalUrl: 'REPLACE_ME' });
@@ -278,6 +283,14 @@ We are keen for your feedback; please open an [issue](https://www.github.com/Diz
 TypeScript >= 4.5 is supported.
 
 The following runtimes are supported:
+
+- Node.js 18 LTS or later ([non-EOL](https://endoflife.date/nodejs)) versions.
+- Deno v1.28.0 or higher, using `import Terminal from "npm:@terminal/sdk"`.
+- Bun 1.0 or later.
+- Cloudflare Workers.
+- Vercel Edge Runtime.
+- Jest 28 or greater with the `"node"` environment (`"jsdom"` is not supported at this time).
+- Nitro v2.6 or greater.
 
 Note that React Native is not supported at this time.
 
