@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.0 (2024-10-28)
+
+Full Changelog: [v0.0.1-alpha.1...v1.0.0](https://github.com/Dizzzmas/sst-url-shortener-js-sdk/compare/v0.0.1-alpha.1...v1.0.0)
+
+### Features
+
+* **api:** update via SDK Studio ([#4](https://github.com/Dizzzmas/sst-url-shortener-js-sdk/issues/4)) ([6f568ff](https://github.com/Dizzzmas/sst-url-shortener-js-sdk/commit/6f568ff86ad4b084733c608d0eca1d9da4a56261))
+* BREAKING CHANGE: prep for v1 release ([7734bea](https://github.com/Dizzzmas/sst-url-shortener-js-sdk/commit/7734bea72813b7f9d83034fbb7f84e9221249d12))
+
 ## 0.0.1-alpha.1 (2024-10-24)
 
 Full Changelog: [v0.0.1-alpha.0...v0.0.1-alpha.1](https://github.com/Dizzzmas/sst-url-shortener-js-sdk/compare/v0.0.1-alpha.0...v0.0.1-alpha.1)
