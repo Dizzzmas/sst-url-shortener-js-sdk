@@ -11,7 +11,7 @@
     "paths": {
       "@dizzzmas/sst-url-shortener-sdk/_shims/auto/*": ["src/_shims/auto/*-node"],
       "@dizzzmas/sst-url-shortener-sdk/*": ["src/*"],
-      "@dizzzmas/sst-url-shortener-sdk": ["src/index.ts"],
+      "@dizzzmas/sst-url-shortener-sdk": ["src/index.ts"]
     },
     "noEmit": true,
 
@@ -32,6 +32,7 @@
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
+		"isolatedModules": false,
 
     "skipLibCheck": true
   }
