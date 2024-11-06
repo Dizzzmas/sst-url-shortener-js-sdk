@@ -1,10 +1,30 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import * as Errors from './error';
-import * as Uploads from './uploads';
 import { type Agent } from './_shims/index';
 import * as Core from './core';
+import * as Errors from './error';
+import * as Uploads from './uploads';
 import * as API from './resources/index';
+import {
+  ShortURL,
+  ShortURLCountResult,
+  ShortURLSearchResult,
+  URLCreateParams,
+  URLCreateResponse,
+  URLDeleteByOriginalURLParams,
+  URLDeleteByOriginalURLResponse,
+  URLDeleteByShortIDParams,
+  URLDeleteByShortIDResponse,
+  URLFromOriginalURLParams,
+  URLFromOriginalURLResponse,
+  URLFromShortIDParams,
+  URLFromShortIDResponse,
+  URLQuickCountResponse,
+  URLSearchParams,
+  URLSearchResponse,
+  URLSlowCountResponse,
+  URLs,
+} from './resources/urls';
 
 export interface ClientOptions {
   /**
@@ -157,7 +177,7 @@ export class SstURLShortener extends Core.APIClient {
   static fileFromPath = Uploads.fileFromPath;
 }
 
-export const {
+export {
   SstURLShortenerError,
   APIError,
   APIConnectionError,
@@ -171,32 +191,36 @@ export const {
   InternalServerError,
   PermissionDeniedError,
   UnprocessableEntityError,
-} = Errors;
+} from './error';
 
 export import toFile = Uploads.toFile;
 export import fileFromPath = Uploads.fileFromPath;
 
-export namespace SstURLShortener {
-  export import RequestOptions = Core.RequestOptions;
+SstURLShortener.URLs = URLs;
 
-  export import URLs = API.URLs;
-  export import ShortURL = API.ShortURL;
-  export import ShortURLCountResult = API.ShortURLCountResult;
-  export import ShortURLSearchResult = API.ShortURLSearchResult;
-  export import URLCreateResponse = API.URLCreateResponse;
-  export import URLDeleteByOriginalURLResponse = API.URLDeleteByOriginalURLResponse;
-  export import URLDeleteByShortIDResponse = API.URLDeleteByShortIDResponse;
-  export import URLFromOriginalURLResponse = API.URLFromOriginalURLResponse;
-  export import URLFromShortIDResponse = API.URLFromShortIDResponse;
-  export import URLQuickCountResponse = API.URLQuickCountResponse;
-  export import URLSearchResponse = API.URLSearchResponse;
-  export import URLSlowCountResponse = API.URLSlowCountResponse;
-  export import URLCreateParams = API.URLCreateParams;
-  export import URLDeleteByOriginalURLParams = API.URLDeleteByOriginalURLParams;
-  export import URLDeleteByShortIDParams = API.URLDeleteByShortIDParams;
-  export import URLFromOriginalURLParams = API.URLFromOriginalURLParams;
-  export import URLFromShortIDParams = API.URLFromShortIDParams;
-  export import URLSearchParams = API.URLSearchParams;
+export declare namespace SstURLShortener {
+  export type RequestOptions = Core.RequestOptions;
+
+  export {
+    URLs as URLs,
+    type ShortURL as ShortURL,
+    type ShortURLCountResult as ShortURLCountResult,
+    type ShortURLSearchResult as ShortURLSearchResult,
+    type URLCreateResponse as URLCreateResponse,
+    type URLDeleteByOriginalURLResponse as URLDeleteByOriginalURLResponse,
+    type URLDeleteByShortIDResponse as URLDeleteByShortIDResponse,
+    type URLFromOriginalURLResponse as URLFromOriginalURLResponse,
+    type URLFromShortIDResponse as URLFromShortIDResponse,
+    type URLQuickCountResponse as URLQuickCountResponse,
+    type URLSearchResponse as URLSearchResponse,
+    type URLSlowCountResponse as URLSlowCountResponse,
+    type URLCreateParams as URLCreateParams,
+    type URLDeleteByOriginalURLParams as URLDeleteByOriginalURLParams,
+    type URLDeleteByShortIDParams as URLDeleteByShortIDParams,
+    type URLFromOriginalURLParams as URLFromOriginalURLParams,
+    type URLFromShortIDParams as URLFromShortIDParams,
+    type URLSearchParams as URLSearchParams,
+  };
 }
 
 export default SstURLShortener;
