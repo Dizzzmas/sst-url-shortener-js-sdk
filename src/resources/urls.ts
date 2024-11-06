@@ -3,7 +3,6 @@
 import { APIResource } from '../resource';
 import { isRequestOptions } from '../core';
 import * as Core from '../core';
-import * as URLsAPI from './urls';
 
 export class URLs extends APIResource {
   /**
@@ -178,22 +177,24 @@ export interface URLSearchParams {
   originalUrlBeginsWith?: string;
 }
 
-export namespace URLs {
-  export import ShortURL = URLsAPI.ShortURL;
-  export import ShortURLCountResult = URLsAPI.ShortURLCountResult;
-  export import ShortURLSearchResult = URLsAPI.ShortURLSearchResult;
-  export import URLCreateResponse = URLsAPI.URLCreateResponse;
-  export import URLDeleteByOriginalURLResponse = URLsAPI.URLDeleteByOriginalURLResponse;
-  export import URLDeleteByShortIDResponse = URLsAPI.URLDeleteByShortIDResponse;
-  export import URLFromOriginalURLResponse = URLsAPI.URLFromOriginalURLResponse;
-  export import URLFromShortIDResponse = URLsAPI.URLFromShortIDResponse;
-  export import URLQuickCountResponse = URLsAPI.URLQuickCountResponse;
-  export import URLSearchResponse = URLsAPI.URLSearchResponse;
-  export import URLSlowCountResponse = URLsAPI.URLSlowCountResponse;
-  export import URLCreateParams = URLsAPI.URLCreateParams;
-  export import URLDeleteByOriginalURLParams = URLsAPI.URLDeleteByOriginalURLParams;
-  export import URLDeleteByShortIDParams = URLsAPI.URLDeleteByShortIDParams;
-  export import URLFromOriginalURLParams = URLsAPI.URLFromOriginalURLParams;
-  export import URLFromShortIDParams = URLsAPI.URLFromShortIDParams;
-  export import URLSearchParams = URLsAPI.URLSearchParams;
+export declare namespace URLs {
+  export {
+    type ShortURL as ShortURL,
+    type ShortURLCountResult as ShortURLCountResult,
+    type ShortURLSearchResult as ShortURLSearchResult,
+    type URLCreateResponse as URLCreateResponse,
+    type URLDeleteByOriginalURLResponse as URLDeleteByOriginalURLResponse,
+    type URLDeleteByShortIDResponse as URLDeleteByShortIDResponse,
+    type URLFromOriginalURLResponse as URLFromOriginalURLResponse,
+    type URLFromShortIDResponse as URLFromShortIDResponse,
+    type URLQuickCountResponse as URLQuickCountResponse,
+    type URLSearchResponse as URLSearchResponse,
+    type URLSlowCountResponse as URLSlowCountResponse,
+    type URLCreateParams as URLCreateParams,
+    type URLDeleteByOriginalURLParams as URLDeleteByOriginalURLParams,
+    type URLDeleteByShortIDParams as URLDeleteByShortIDParams,
+    type URLFromOriginalURLParams as URLFromOriginalURLParams,
+    type URLFromShortIDParams as URLFromShortIDParams,
+    type URLSearchParams as URLSearchParams,
+  };
 }

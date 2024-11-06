@@ -1,6 +1,6 @@
 {
   "name": "@dizzzmas/sst-url-shortener-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The official TypeScript library for the Sst URL Shortener API",
   "author": "Sst URL Shortener <dev-feedback@sst-url-shortener.com>",
   "types": "dist/index.d.ts",
